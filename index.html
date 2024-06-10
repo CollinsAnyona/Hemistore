@@ -3,188 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemisale</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>Waste Management Sys</title>
+
+    <!-- Code for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for font awesome -->
+    <!-- Code for font linking css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="header">
-        <a href="#"><img src="e-removebg-preview.png" class="logo" alt="e-commerece logo"></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-thin fa-bag-shopping"></i></a></li>
-            </ul>
+    <!--header start-->
+    <header class="header">
+        <a href="#" class="logo" ><i class="fa fa-shopping-basket"></i> WasteMS</a>
+        
+        <nav class="navbar">
+            <a href="home">home</a>
+            <a href="features">features</a>
+            <a href="products">products</a>
+            <a href="dashboard">dashboard</a>
+            <a href="about us">about us</a>
+        </nav>
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
         </div>
-    </section>
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="f1.png" alt="feature">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="f2.png" alt="feature">
-            <h6>Online Order</h6>
-        </div> <div class="fe-box">
-            <img src="f3.png" alt="feature">
-            <h6>Save Money</h6>
-        </div> <div class="fe-box">
-            <img src="f4.png" alt="feature">
-            <h6>Promotions</h6>
-        </div> <div class="fe-box">
-            <img src="f5.png" alt="feature">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="f6.png" alt="feature">
-            <h6>F24/7 Support</h6>
-        </div>
-    </section>
-    <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer Collection New Modern Design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="f1.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        
+        <!-- <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+
+            <input type="submit" value="Login Now" class="btn">
+        </form> -->
+    </header>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLogin">&times;</span>
+            <div class="form-box">
+                <h2>Login</h2>
+                <form action="login_action.php" method="post">
+                    <label for="login-email">Email</label><br><br>
+                    <input type="email" id="login-email" name="email" placeholder="email" required><br><br>
+                    <label for="login-password">Password</label><br><br>
+                    <input type="password" id="login-password" name="password" placeholder="password" required><br><br>
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label><br><br>
+                    <button class="btm">Log in</button>
+                    <p><a href="registration.html" id="links" class="signup-link">New User? Sign Up here</a></p>
+                    <p><a href="#" id="links" class="forgot-password">Forgot password?</a></p>
+                </form>
             </div>
-            <div class="pro">
-                <img src="f2.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f3.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f4.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f5.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f6.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f7.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="f8.jpg" alt="product">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
+        </div>    
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <div class="form-box">
+                <h2>Register</h2>
+                <form action="register_action.php" method="post">
+                    <label for="reg-username">Username</label><br><br>
+                    <input type="text" id="reg-username" name="username" placeholder="username" required><br><br>
+                    <label for="reg-email">Email</label><br><br>
+                    <input type="email" id="reg-email" name="email" placeholder="email" required><br><br>
+                    <label for="reg-password">Password</label><br><br>
+                    <input type="password" id="reg-password" name="password" placeholder="password" required><br><br>
+                    <button class="btm">Sign Up</button>
+                </form>
             </div>
         </div>
-    </section>
-    <script src="index.js"></script>
+    </div>
+    <!--header end-->
+
+    <script src="script.js"></script>
 </body>
 </html>
